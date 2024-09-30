@@ -38,6 +38,10 @@ export default {
           13: "#6C7275",
         },
       },
+      animation: {
+        "spin-slow": "spin 2s linear infinite",
+        "spin-slower": "spin 3s linear infinite",
+      },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
