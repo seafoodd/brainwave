@@ -4,7 +4,7 @@ import Card from "./Card.jsx";
 
 const Features = () => {
   return (
-    <Section className="relative py-10 lg:py-16 xl:py-20">
+    <Section className="relative py-10 lg:py-16 xl:py-20" id="#features">
       <div className="container relative z-2">
         <div className="md:max-w-md lg:max-w-2xl max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center">
           <h2 className="h2">Chat Smarter, Not Harder with Brainwave</h2>
