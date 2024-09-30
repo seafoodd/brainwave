@@ -3,7 +3,7 @@ import Section from "./Section.jsx";
 import { curve, heroBackground, robot } from "../assets/index.js";
 import Button from "./Button.jsx";
 import { BackgroundCircles, Gradient } from "./design/Hero.jsx";
-import { heroIcons } from "../constants/index.js";
+import { companyLogos, heroIcons } from "../constants/index.js";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "./Generating.jsx";
 import Notification from "./Notification.jsx";
@@ -93,6 +93,19 @@ const Hero = () => {
             />
           </div>
           <BackgroundCircles />
+        </div>
+
+        <div className="hidden relative z-10 mt-20 lg:block">
+          <h6 className="tagline mb-6 text-center text-n-1/50">
+            Helping people create beautiful content at
+          </h6>
+          <ul className="flex">
+            {companyLogos.map((item) => (
+              <li className='flex items-center justify-center h-[8.5rem] flex-1'>
+                <img src={item} alt={item} width={134} height={28} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </Section>
