@@ -40,7 +40,7 @@ export default {
       },
       animation: {
         "spin-slow": "spin 2s linear infinite",
-        "spin-slower": "spin 3s linear infinite",
+        "spin-slower": "spin 45s linear infinite",
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],

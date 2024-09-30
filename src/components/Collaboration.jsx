@@ -45,7 +45,7 @@ const Collaboration = () => {
               </div>
             </div>
 
-            <ul>
+            <ul className="absolute inset-0 flex items-center justify-center animate-spin-slower">
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}
@@ -53,19 +53,20 @@ const Collaboration = () => {
                     index * 45
                   }`}
                 >
-                  <div
-                    className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
-                      index * 45
-                    }`}
-                  >
-                    <img
-                      className="m-auto"
-                      width={app.width}
-                      height={app.height}
-                      alt={app.title}
-                      src={app.icon}
-                    />
-                  </div>
+                  <a href={app.href} target="_blank" rel="noopener noreferrer">
+                    <div
+                      className={`relative transition-transform hover:scale-125 -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl `}
+                    >
+                      <div className={`m-auto`}>
+                        <img
+                          width={app.width}
+                          height={app.height}
+                          alt={app.title}
+                          src={app.icon}
+                        />
+                      </div>
+                    </div>
+                  </a>
                 </li>
               ))}
             </ul>
