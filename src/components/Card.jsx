@@ -2,6 +2,7 @@ import Arrow from "../assets/svg/Arrow.jsx";
 import { GradientLight } from "./design/Benefits.jsx";
 import ClipPath from "../assets/svg/ClipPath.jsx";
 
+
 const Card = ({
   title,
   text,
