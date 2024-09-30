@@ -14,7 +14,7 @@ const Card = ({
   return (
     <div
       className={`${className} block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]`}
-      style={{ backgroundImage: `url(src/${backgroundUrl})` }}
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}src/${backgroundUrl})` }}
     >
       <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
         <h5 className="h5 mb-5">{title}</h5>
