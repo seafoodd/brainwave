@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <Section
       className="relative py-10 lg:py-16 xl:py-20"
-      id="#features"
+      id="features"
       crosses
       crossesOffset='lg:-translate-y-[35rem]'
     >
